@@ -1,0 +1,65 @@
+<!doctype html>
+<head>
+	<title>Space</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
+	<link href='base.css' rel='stylesheet' type='text/css'>
+	<script src="space.js"></script>
+
+</head>
+
+<body>
+	<div class="underlay">
+		<div class="credits">
+			Powered by <a href="http://www.envyum.nl" target="_BLANK">www.envyum.nl</a>
+		</div>
+		<div class="stripe_vertical_block">
+			<div class="stripe_vertical"></div>
+			<div class="stripe_vertical"></div>
+			<div class="stripe_vertical"></div>
+		</div>
+
+		<div class="stripe_horizontal_block">
+			
+			<div class="stripe_horizontal_large"></div>
+			<div class="stripe_horizontal_small"></div>
+			<div class="stripe_horizontal_small"></div>
+		</div>
+
+		<div class="counter">
+			<div class="arc_small"></div>
+			<div class="count_globe">
+				<span class="txt">Press for</span>
+				<span id="secondsToPress">0</span>
+				<span class="txt">seconds</span>
+			</div>
+			<div class="arc_big"></div>
+		</div>
+
+		<div class="bar">
+			<div class="stripe"></div>
+			<div id="result" class="result">
+				You've pressed for <span id="pressed"></span> seconds.<br>
+				You were off by <span id="secondsWrong">0</span> seconds!<br><br> Press <strong>spacebar</strong> to try again.
+			</div>
+			<div id="error" style="display: none;" class="result"></div>
+			<div class="tip result" id="explanation">
+				Press <i>spacebar</i> for the given amount of time. Release it when you think the time is up!
+			</div>
+		</div>
+	</div>
+<!-- 	
+	<div id="start_screen">
+			Druk <span id="secondsToPress">0</span> seconden op spatie en check je resultaat
+	</div>
+	<div id="result" style="display: none;">
+		Je hebt <span id="pressed"></span> seconden gedrukt.<br>
+		Je zat er <span id="secondsWrong">0</span> seconden naast! Druk op de spatiebalk om het nog 's te proberen.
+	</div>
+	<div id="is_counting" style="display: none;">
+		Hij telt. Laat spatie los wanneer jij denkt dat de tijd rijp is
+	</div>
+
+	<div id="error" style="display: none;"></div> -->
+</body>
+</html>

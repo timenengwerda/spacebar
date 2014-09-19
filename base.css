@@ -1,0 +1,227 @@
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+		body {
+			background: #000;
+			font-size: 20px;
+			font-family: 'Carrois Gothic SC', sans-serif;
+		}
+
+		.stripe_vertical_block {
+			position: absolute;
+			top: 0.5em;
+			left: 1em;
+			height: 15em;
+			width: 12em;
+		}
+
+			.stripe_vertical {
+				background: #f1ef2e;
+				width: 0.5em;
+				height: 90%;
+				position: absolute;
+				bottom: 0px;
+				left: 0.8em;
+			}
+
+				.stripe_vertical:first-child {
+					height: 100%;
+					background: #ff3def;
+					left: 0px;
+				}
+
+				.stripe_vertical:last-child {
+					height: 50%;
+					background: #2ef145;
+					left: 1.8em;
+				}
+
+		.stripe_horizontal_block {
+			width: 14em;
+			height: 10em;
+			position: absolute;
+			top: 6.2em;
+			left: 1em;
+		}
+
+			.stripe_horizontal_large {
+				height: 0.3em;
+				width: 100%;
+				background: #ff3def;
+				position: absolute;
+				bottom: 0px;
+			}
+
+			.stripe_horizontal_small {
+				height: 0.3em;
+				width: 50%;
+				background: #2ef145;
+				position: absolute;
+				bottom: 1.4em;
+				left: 2.8em;
+			}
+
+			.stripe_horizontal_small:last-child {
+				height: 0.3em;
+				width: 75%;
+				background: #f1ef2e;
+				position: absolute;
+				bottom: 0.7em;
+				left: 2.8em;
+			}
+
+		.bar {
+			height: 8em;
+			width: 100%;
+			background: #6e6e6e;
+			position: absolute;
+			top: 17em;
+			z-index: 1;
+		}
+
+			.bar .stripe {
+				position: absolute;
+				height: 0.5em;
+				background: #000;
+				width: 100%;
+				bottom: 0.3em;
+			}
+
+			.bar .result {
+				position: absolute;
+				color: #fff;
+				top: 0.7em;
+				right: 5em;
+				font-size: 1.2em;
+				width: 50%;
+			}
+
+		.counter {
+			width: 15em;
+			height: 12em;
+			position: absolute;
+			top: 14.5em;
+			left: 15em;
+			z-index: 2;
+		}
+
+			.arc_small, .arc_big {
+				position: absolute;
+				border: 0.5em solid #fff;
+				display: inline-block;
+				width: 11em;
+				height: 11em;
+				padding: 0.5em;
+				border-radius: 50%;
+				border-top-color: transparent;
+				border-bottom-color: transparent;
+				border-right-color: transparent;
+				-webkit-transform: rotate(0deg);
+				transform: rotate(0deg);
+				top: 0px;
+				left: 0px;
+				border-spacing: 0;
+			}
+
+			.arc_big {
+				width: 13em;
+				height: 13em;
+				top: -1em;
+				left: -1em;
+				border: 0.5em solid #ff8400;
+				border-top-color: transparent;
+				border-bottom-color: transparent;
+				border-right-color: transparent;
+				-webkit-transform: rotate(0deg);
+				transform: rotate(0deg);
+			}
+
+			.count_globe {
+				width: 11em;
+				height: 11em;
+				background: #FFF;
+				border-radius: 50%;
+				position: relative;
+				top: 1em;
+				left: 1em;
+				color: #333;
+				text-align: center;
+				padding-top: 1.4em;
+				box-sizing: border-box;
+			}
+
+				.count_globe span.txt {
+					display: block;
+					float: left;
+					width: 100%;
+					height: 10%;
+					font-size: 1.5em;
+				}
+
+				.count_globe span#secondsToPress {
+					display: block;
+					float: left;
+					width: 100%;
+					height: 57%;
+					font-size: 5em;
+					line-height: 1.3em;
+				}
+
+.tip {
+	top: 1.6em !important;
+}
+			
+
+@-webkit-keyframes spin {  
+	from {  
+		-webkit-transform: rotate(0deg);  
+	} to {  
+		-webkit-transform: rotate(360deg);  
+	} 
+}
+
+.spin {
+	-webkit-animation-name: spin; 
+	-webkit-animation-iteration-count: infinite; 
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-duration: 7s;
+}
+
+@-webkit-keyframes spin_fast {  
+	from {  
+		-webkit-transform: rotate(360deg);  
+	} to {  
+		-webkit-transform: rotate(0deg);  
+	} 
+}
+
+.spin_fast {
+	-webkit-animation-name: spin_fast; 
+	-webkit-animation-iteration-count: infinite; 
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-duration: 4s;	
+}
+
+
+#pressed, #secondsWrong {
+	font-weight: bold;
+}
+
+
+.credits {
+	color: #FFF;
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	font-size: 0.8em;
+}
+
+	.credits a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+		.credits a:hover {
+			text-decoration: underline;
+		}
